@@ -14,8 +14,28 @@
   line-height: 120px;
 }
 
-.nav-link:hover {
+.nav-link {
+  position: relative;
+  /* border: 2px solid red; */
+}
+
+.nav-link::before {
+  content: "";
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  background-color: red;
+  position: absolute;
+  transform: scaleX(0);
+  transition: transform 0.5s;
+  transform-origin: right;
+}
+
+.nav-link:hover::before {
   color: var(--primary-theme-color);
+  transform: scaleX(1);
+  transform-origin: left;
 }
 
 .on-hover-color:hover {
@@ -29,9 +49,66 @@
   background: url(images/slider-fix-img.webp);
 }
 
-/* .btn-wrapper {
-  border: 2px solid red;
-} */
+/*--------------------------------- animation  -------------------------------*/
+@keyframes fade-up-animation-first-text {
+  from {
+    transform: translateY(80px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-up-animation-second-text {
+  0% {
+    transform: translateY(80px);
+    opacity: 0;
+  }
+
+  25% {
+    opacity: 0.2;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  75% {
+    opacity: 0.7;
+  }
+
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-up-animation-button {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+
+  25% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  75% {
+    opacity: 0.8;
+  }
+
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
 
 .rounded-pill {
   color: black;
@@ -43,6 +120,37 @@
   font-family: var(--montserrat-fonts);
   font-weight: 500;
   border: none;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  transition: color 1s;
+  animation-name: fade-up-animation-button;
+  animation-duration: 3s;
+}
+
+.rounded-pill::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: black;
+  /* color: white; */
+  border-radius: 50px;
+  transform: scaleX(0);
+  transition: transform 600ms ease-in-out;
+  transform-origin: right;
+}
+
+.rounded-pill:hover {
+  color: white;
+}
+
+.rounded-pill:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
 }
 
 .arrow-parent {
@@ -61,6 +169,8 @@
   font-weight: 700;
   letter-spacing: 2px;
   line-height: 1;
+  animation-name: fade-up-animation-first-text;
+  animation-duration: 1s;
 }
 
 .first-section-title::before {
@@ -89,6 +199,8 @@
   line-height: 80px;
   margin-top: 6px;
   margin-bottom: 35px;
+  animation-name: fade-up-animation-second-text;
+  animation-duration: 2s;
 }
 
 /* swiper slider  */
