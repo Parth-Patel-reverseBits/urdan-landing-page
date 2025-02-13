@@ -7,6 +7,10 @@
   --first-hero-section-color: #f2f2f2;
 }
 
+body {
+  font-family: var(--montserrat-fonts);
+}
+
 .navbar-links-fonts {
   font-family: var(--montserrat-fonts);
   font-weight: 500;
@@ -220,6 +224,7 @@
 
 .custom-styling-swiper {
   /* border: 2px solid red; */
+  margin-bottom: 50px;
   display: flex;
   justify-content: space-around;
 }
@@ -415,4 +420,82 @@
   opacity: 1;
   transform: translateY(-5px);
   cursor: pointer;
+}
+
+/*----------------------------------------------- second section ---------------------------------------*/
+
+.second-section-btn {
+  padding: 10px 42px;
+  border: none;
+  border-radius: 50px;
+  background-color: var(--primary-theme-color);
+  color: white;
+}
+
+.custom-styling-content {
+  border: 2px solid red;
+  width: 100%;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.custom-font-second-section {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.image-holder {
+  overflow: hidden;
+  /* border: 2px solid red; */
+  width: 100%;
+  height: 350px;
+  cursor: pointer;
+}
+
+.image-scale {
+  position: absolute;
+  transition: all 1s;
+}
+
+.image-holder:hover .image-scale {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.custom-second-section-first-title {
+  display: flex;
+  align-items: center;
+}
+
+.custom-second-section-first-title::before {
+  content: "";
+  display: inline-block;
+  width: 50px;
+  height: 3px;
+  margin-right: 20px;
+  background-color: var(--primary-theme-color);
+}
+
+.custom-second-section-first-title::after {
+  content: "";
+  display: inline-block;
+  width: 50px;
+  height: 3px;
+  margin-left: 20px;
+  background-color: var(--primary-theme-color);
+}
+
+.font-custom-weight {
+  font-weight: 600;
+}
+
+/* media queries  */
+
+@media (max-width: 678px) {
+  .custom-padding-device {
+    padding: 0;
+  }
 }
