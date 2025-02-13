@@ -206,7 +206,7 @@
 /* swiper slider  */
 
 .custom-width {
-  width: 70%;
+  width: 65%;
   overflow: hidden;
   /* border: 2px solid blue; */
 }
@@ -230,6 +230,31 @@
   padding-right: 50px;
 }
 
+/* animation  */
+@keyframes image-animation-1 {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+
+  25% {
+    opacity: 0.2;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  75% {
+    opacity: 0.8;
+  }
+
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
 .swiper-image-1 {
   width: 150px;
   text-align: center;
@@ -237,6 +262,123 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  animation-name: image-animation-1;
+  animation-duration: 1s;
+}
+
+@keyframes image-animation-2 {
+  0% {
+    transform: translateY(150px);
+    opacity: 0;
+  }
+
+  25% {
+    opacity: 0.2;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  75% {
+    opacity: 0.8;
+  }
+
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+.image-animation-2 {
+  animation-name: image-animation-2;
+  animation-duration: 1.3s;
+}
+
+@keyframes image-animation-3 {
+  0% {
+    transform: translateY(200px);
+    opacity: 0;
+  }
+
+  25% {
+    opacity: 0.2;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  75% {
+    opacity: 0.8;
+  }
+
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+.image-animation-3 {
+  animation-name: image-animation-3;
+  animation-duration: 1.5s;
+}
+
+@keyframes image-animation-4 {
+  0% {
+    transform: translateY(250px);
+    opacity: 0;
+  }
+
+  25% {
+    opacity: 0.2;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  75% {
+    opacity: 0.8;
+  }
+
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+.image-animation-4 {
+  animation-name: image-animation-4;
+  animation-duration: 1.8s;
+}
+
+@keyframes image-animation-5 {
+  0% {
+    transform: translateY(300px);
+    opacity: 0;
+  }
+
+  25% {
+    opacity: 0.2;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  75% {
+    opacity: 0.8;
+  }
+
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+.image-animation-5 {
+  animation-name: image-animation-5;
+  animation-duration: 2s;
 }
 
 .image-wrapper {
