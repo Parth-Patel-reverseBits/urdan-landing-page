@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    ul {
+      display: flex;
+      list-style: none;
+      border: 2px solid red;
+      box-sizing: border-box;
+    }
+
+    li {
+      box-sizing: border-box;
+      border: 2px solid red;
+    }
+    li a {
+      padding: 20px;
+      text-decoration: none;
+      font-size: 30px;
+    }
+
+    li a::before {
+      display: block;
+      content: attr(data-content);
+      /* font-weight: bold; */
+      height: 0;
+      overflow: hidden;
+      visibility: hidden;
+    }
+
+    li a:hover::before {
+      display: block;
+      content: attr(data-content);
+      font-weight: bold;
+      height: 0;
+      overflow: hidden;
+      visibility: hidden;
+    }
+  </style>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="" data-content="">Home</a></li>
+        <li><a href="">Home</a></li>
+        <li><a href="">Home</a></li>
+        <li><a href="">Home</a></li>
+        <li><a href="">Home</a></li>
+      </ul>
+    </nav>
+  </body>
+</html>
