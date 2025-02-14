@@ -6,22 +6,22 @@
     <title>Document</title>
   </head>
   <style>
-    .arrow-left {
-      opacity: 0;
+    .parent {
+      position: relative;
+      border: 2px solid red;
     }
-    #name:checked ~ .arrow-left {
-      transition: all 1s;
-      opacity: 1;
-      transform: translateX(50px);
-    }
-    .arrow-right {
+
+    .child {
+      position: absolute;
+      /* left: 0;
+      right: 0; */
+      -webkit-box-pack: center;
     }
   </style>
   <body>
-    <div style="display: flex; justify-content: center; padding: 20px">
-      <input type="radio" id="name" />
-      <label for="name"> Arrow Right</label>
-      <button class="arrow-left">Arrow Left</button>
+    <div class="parent">
+      <div class="child">21 Products</div>
+      <div></div>
     </div>
   </body>
 </html>
