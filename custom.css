@@ -438,6 +438,29 @@ body {
   border-radius: 50px;
   background-color: var(--primary-theme-color);
   color: white;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.second-section-btn:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: black;
+  border-radius: 50px;
+  transform: scaleX(0);
+  z-index: -1;
+  transition: transform 0.5s;
+  transform-origin: right;
+}
+
+.second-section-btn:hover:before {
+  transform: scaleX(1);
+  transform-origin: left;
 }
 
 .custom-styling-content {
