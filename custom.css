@@ -1190,6 +1190,15 @@ body {
   z-index: 20;
 }
 
+.custom-testimonial-title-color {
+  color: #575555;
+}
+
+.custom-testimonial-title-last-color {
+  color: #746e6e;
+  font-weight: 500;
+}
+
 /*------------------------------------- colloboration-section ----------------------------*/
 
 .card-overlay {
@@ -1269,6 +1278,15 @@ footer {
 .author-name {
   color: var(--primary-theme-color);
   font-weight: 500;
+}
+
+.footer-link-hover {
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.footer-link-hover:hover {
+  color: var(--primary-theme-color);
 }
 
 /* media queries  */
