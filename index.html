@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>urdan lnnading page</title>
+    <title>urdan Landing page</title>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
@@ -24,7 +24,78 @@
           <a class="navbar-brand" href="#">
             <img src="images/logo.webp" alt="" />
           </a>
-          <button
+
+          <div
+            class="col-sm-4 col-md-2 d-flex d-md-none justify-content-end p-0 align-items-center"
+          >
+            <span class="me-3">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="23"
+                height="23"
+                fill="currentColor"
+                class="bi bi-search on-hover-color"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+                />
+              </svg>
+            </span>
+
+            <span class="me-3">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="23"
+                height="23"
+                fill="currentColor"
+                class="bi bi-person-circle on-hover-color"
+                viewBox="0 0 16 16"
+              >
+                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                <path
+                  fill-rule="evenodd"
+                  d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"
+                />
+              </svg>
+            </span>
+
+            <span class="me-3">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="23"
+                height="23"
+                fill="currentColor"
+                class="bi bi-suit-heart on-hover-color"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="m8 6.236-.894-1.789c-.222-.443-.607-1.08-1.152-1.595C5.418 2.345 4.776 2 4 2 2.324 2 1 3.326 1 4.92c0 1.211.554 2.066 1.868 3.37.337.334.721.695 1.146 1.093C5.122 10.423 6.5 11.717 8 13.447c1.5-1.73 2.878-3.024 3.986-4.064.425-.398.81-.76 1.146-1.093C14.446 6.986 15 6.131 15 4.92 15 3.326 13.676 2 12 2c-.777 0-1.418.345-1.954.852-.545.515-.93 1.152-1.152 1.595zm.392 8.292a.513.513 0 0 1-.784 0c-1.601-1.902-3.05-3.262-4.243-4.381C1.3 8.208 0 6.989 0 4.92 0 2.755 1.79 1 4 1c1.6 0 2.719 1.05 3.404 2.008.26.365.458.716.596.992a7.6 7.6 0 0 1 .596-.992C9.281 2.049 10.4 1 12 1c2.21 0 4 1.755 4 3.92 0 2.069-1.3 3.288-3.365 5.227-1.193 1.12-2.642 2.48-4.243 4.38z"
+                />
+              </svg>
+            </span>
+
+            <span class="">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="23"
+                height="23"
+                fill="currentColor"
+                class="bi bi-bag-check on-hover-color"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10.854 8.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708 0"
+                />
+                <path
+                  d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"
+                />
+              </svg>
+            </span>
+          </div>
+
+          <!-- <button
             class="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
@@ -34,12 +105,24 @@
             aria-label="Toggle navigation"
           >
             <span class="navbar-toggler-icon"></span>
+          </button> -->
+
+          <button
+            class="slider-bar-parent d-lg-none"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasRight"
+            aria-controls="offcanvasRight"
+          >
+            <span class="slider-bar"></span>
+            <span class="slider-bar"></span>
+            <span class="slider-bar"></span>
           </button>
 
           <!-- navabar links -->
           <div class="collapse navbar-collapse row" id="navbarSupportedContent">
             <ul
-              class="navbar-nav col-sm-12 col-md-10 d-flex justify-content-xl-center justify-content-md-center p-0 navbar-links-fonts text-uppercase"
+              class="navbar-nav col-sm-12 col-md-10 d-none d-lg-flex justify-content-xl-center justify-content-md-center p-0 navbar-links-fonts text-uppercase"
             >
               <li class="nav-item me-3">
                 <a class="nav-link" aria-current="page" href="#">Home</a>
@@ -69,7 +152,7 @@
 
             <!--bootstrap icons -->
             <div
-              class="col-sm-4 col-md-2 d-flex justify-content-end p-0 align-items-center"
+              class="col-sm-4 col-md-2 d-none d-md-flex justify-content-end p-0 align-items-center"
             >
               <span class="me-3">
                 <svg
@@ -138,6 +221,126 @@
               </span>
             </div>
           </div>
+
+          <!-- offCanvas  -->
+
+          <div
+            class="offcanvas offcanvas-end d-md-none"
+            tabindex="-1"
+            id="offcanvasRight"
+            aria-labelledby="offcanvasRightLabel"
+          >
+            <div class="offcanvas-header close-btn-offcanvas">
+              <span data-bs-dismiss="offcanvas" class="">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="25"
+                  height="25"
+                  fill="white"
+                  class="bi bi-x-lg"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"
+                  />
+                </svg>
+              </span>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="list-unstyled">
+                <li
+                  class="d-flex justify-content-between px-3 py-2 hover-effect-links"
+                >
+                  HOME
+                  <span
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-chevron-right"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"
+                      />
+                    </svg>
+                  </span>
+                </li>
+                <li
+                  class="d-flex justify-content-between px-3 py-2 hover-effect-links"
+                >
+                  SHOP
+                  <span
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-chevron-right"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"
+                      />
+                    </svg>
+                  </span>
+                </li>
+                <li
+                  class="d-flex justify-content-between px-3 py-2 hover-effect-links"
+                >
+                  PAGES
+                  <span
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-chevron-right"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"
+                      />
+                    </svg>
+                  </span>
+                </li>
+                <li
+                  class="d-flex justify-content-between px-3 py-2 hover-effect-links"
+                >
+                  BLOG
+                  <span
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-chevron-right"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"
+                      />
+                    </svg>
+                  </span>
+                </li>
+                <li
+                  class="d-flex justify-content-between px-3 py-2 hover-effect-links"
+                >
+                  ABOUT US
+                </li>
+                <li
+                  class="d-flex justify-content-between px-3 py-2 hover-effect-links"
+                >
+                  CONTACT US
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </nav>
     </section>
@@ -167,120 +370,6 @@
             />
           </svg>
         </button>
-
-        <!-- Swiper slider  -->
-        <!-- <div
-          class="container d-flex align-items-center justify-content-center border"
-        >
-          <div class="slider-wrapper">
-            <div class="swiper mySwiper">
-              <div class="swiper-wrapper border d-flex justify-content-center">
-                <div class="swiper-slide">
-                  <div class="swiper-image-1 image-animation-2">
-                    <div class="image-wrapper">
-                      <img
-                        class="image-1"
-                        src="images/category-1.webp"
-                        alt=""
-                      />
-                      <img
-                        class="image-2"
-                        src="images/category-hover-1.webp"
-                        alt=""
-                      />
-                    </div>
-                    <div class="text-white">Office Cabin</div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="swiper-image-1 image-animation-2">
-                    <div class="image-wrapper">
-                      <img
-                        class="image-1"
-                        src="images/category-2.webp"
-                        alt=""
-                      />
-                      <img
-                        class="image-2"
-                        src="images/category-hover-2.webp"
-                        alt=""
-                      />
-                    </div>
-                    <div class="text-white">Computer Table</div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="swiper-image-1 image-animation-3">
-                    <div class="image-wrapper">
-                      <img
-                        class="image-1"
-                        src="images/category-3.webp"
-                        alt=""
-                      />
-                      <img
-                        class="image-2"
-                        src="images/category-hover-3.webp"
-                        alt=""
-                      />
-                    </div>
-                    <div class="text-white">Wooden Set</div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="swiper-image-1 image-animation-4">
-                    <div class="image-wrapper">
-                      <img
-                        class="image-1"
-                        src="images/category-5.webp"
-                        alt=""
-                      />
-                      <img
-                        class="image-2"
-                        src="images/category-hover-5.webp"
-                        alt=""
-                      />
-                    </div>
-                    <div class="text-white">Bedrom Light</div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="swiper-image-1 image-animation-5">
-                    <div class="image-wrapper">
-                      <img
-                        class="image-1"
-                        src="images/category-6.webp"
-                        alt=""
-                      />
-                      <img
-                        class="image-2"
-                        src="images/category-hover-6.webp"
-                        alt=""
-                      />
-                    </div>
-                    <div class="text-white">Bathrrom Kit</div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="swiper-image-1">
-                    <div class="image-wrapper">
-                      <img
-                        class="image-1"
-                        src="images/category-7.webp"
-                        alt=""
-                      />
-                      <img
-                        class="image-2"
-                        src="images/category-hover-7.webp"
-                        alt=""
-                      />
-                    </div>
-                    <div class="text-white">Kitchen Kit</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> -->
 
         <div class="position-relative h-100 swiper-custom-margin">
           <div class="swiper mySwiper container">
@@ -528,8 +617,9 @@
           </li>
         </ul>
         <div class="tab-content" id="myTabContent">
+          <!-- New Tab Data  -->
           <div
-            class="tab-pane fade show active"
+            class="tab-pane fade"
             id="home"
             role="tabpanel"
             aria-labelledby="home-tab"
@@ -837,6 +927,7 @@
               </div>
             </div>
           </div>
+          <!-- New Tab Data  -->
           <div
             class="tab-pane fade"
             id="profile"
@@ -1146,6 +1237,7 @@
               </div>
             </div>
           </div>
+          <!-- New Tab Data  -->
           <div
             class="tab-pane fade"
             id="contact"
@@ -1455,7 +1547,7 @@
               </div>
             </div>
           </div>
-
+          <!-- New Tab Data  -->
           <div
             class="tab-pane fade show active"
             id="sale"

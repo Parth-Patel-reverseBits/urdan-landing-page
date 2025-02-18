@@ -56,6 +56,69 @@ body {
   fill: var(--primary-theme-color);
 }
 
+.hover-effect-links {
+  cursor: pointer;
+  font-weight: 500;
+  color: #383838;
+}
+
+.hover-effect-links:hover {
+  color: var(--primary-theme-color);
+}
+
+.close-btn-offcanvas {
+  /* border: 2px solid red; */
+}
+
+.show .close-btn-offcanvas {
+  display: block;
+}
+
+.close-btn-offcanvas {
+  /* background-color: red; */
+}
+
+.close-btn-offcanvas span {
+  position: absolute;
+  top: 0;
+  left: -35px;
+  background-color: var(--primary-theme-color);
+  padding: 5px;
+  display: none;
+}
+
+.show .close-btn-offcanvas span {
+  display: block;
+}
+
+.show .close-btn-offcanvas span svg {
+  display: block;
+  transition: all 0.5s;
+  cursor: pointer;
+  /* display: none; */
+}
+
+.close-btn-offcanvas span:hover svg {
+  transform: rotate(90deg);
+}
+
+.slider-bar-parent {
+  /* border: 2px solid red; */
+  border: none;
+}
+
+.slider-bar {
+  display: block;
+  width: 30px;
+  border: 2px solid black;
+  margin-bottom: 2px;
+  padding: 1px;
+}
+
+.close-btn-offcanvas > span > svg:hover {
+  transform: rotate(90deg);
+}
+
 /*----------------------------------------------- first section --------------------------------------*/
 
 .wrapper {
