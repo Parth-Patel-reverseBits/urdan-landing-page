@@ -12,32 +12,23 @@
   --great-vibes-fonts: "Great Vibes", cursive;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   font-family: var(--montserrat-fonts);
 }
 
-.custom-border {
-  border: 2px solid red;
-}
-
-/* .prev-header {
-  transition: all 1s;
-} */
-
-.sticky-ninty-degree {
-  transition: all 1s;
-  transform: translateY(-50px);
-  opacity: 0;
-}
-
-.sticky-header {
-  transition: all 1s;
-  /* border: 2px solid red; */
+#header-section {
   position: sticky;
   top: 0;
   z-index: 5;
-  transform: translateY(0px);
-  opacity: 1;
+  /* border: 2px solid red; */
+}
+
+.custom-border {
+  border: 2px solid red;
 }
 
 .navbar-links-fonts {
@@ -86,6 +77,11 @@ body {
   color: var(--primary-theme-color);
 }
 
+.offcanvas-end {
+  /* position: fixed; */
+  /* height: 100vh; */
+}
+
 .close-btn-offcanvas {
   /* border: 2px solid red; */
 }
@@ -125,13 +121,14 @@ body {
 .slider-bar-parent {
   /* border: 2px solid red; */
   border: none;
+  gap: 2px;
 }
 
 .slider-bar {
   display: block;
   width: 30px;
   border: 2px solid black;
-  margin-bottom: 2px;
+  /* margin-bottom: 2px; */
   padding: 1px;
 }
 
@@ -1322,6 +1319,20 @@ body {
 
 /*------------------------------------- colloboration-section ----------------------------*/
 
+.swiper {
+  /* border: 2px solid red; */
+  overflow: hidden !important;
+}
+
+.swiper-wrapper {
+  /* overflow: hidden; */
+  /* border: 2px solid red; */
+}
+
+.mySwiper {
+  /* border: 2px solid red; */
+}
+
 .card-overlay {
   cursor: pointer;
   display: flex !important;
@@ -1422,6 +1433,35 @@ footer {
 
 /* media queries  */
 
+@media (max-width: 420px) {
+  .close-btn-offcanvas {
+    /* border: 2px solid red; */
+    transition: all 0.5s;
+  }
+
+  .close-btn-offcanvas span {
+    position: static;
+    padding: 5px;
+    display: flex !important;
+    justify-content: end;
+    /* border: 2px solid blue; */
+    background-color: white;
+    transition: all 0.5s;
+    width: 100%;
+  }
+
+  .close-btn-offcanvas span svg {
+    background-color: var(--primary-theme-color);
+    padding: 3px;
+    width: 30px;
+    height: 30px;
+    transition: all 0.5s;
+    display: block;
+    transition: all 0.5s;
+    transform: rotate(90deg);
+  }
+}
+
 @media (min-width: 576px) {
   .furniture-set-title-1 {
     font-size: 26px;
@@ -1452,6 +1492,10 @@ footer {
 }
 
 @media (min-width: 768px) {
+  .custom-card-color-bg {
+    /* border: 2px solid red !important; */
+  }
+
   .furniture-set-title-1 {
     font-size: 31px;
     margin-top: 30px;
@@ -1479,6 +1523,24 @@ footer {
 }
 
 @media (max-width: 678px) {
+  .image-full {
+    width: 100%;
+  }
+
+  .parent-width-full {
+    width: 100%;
+  }
+
+  .second-section-title {
+    font-size: 30px !important;
+    line-height: 40px !important;
+  }
+
+  .rounded-pill {
+    width: 150px;
+    height: 50px;
+  }
+
   .custom-padding-device {
     padding: 0;
   }
