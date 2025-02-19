@@ -24,6 +24,8 @@ body {
   position: sticky;
   top: 0;
   z-index: 5;
+  padding-top: 10px;
+  padding-bottom: 15px;
   /* border: 2px solid red; */
 }
 
