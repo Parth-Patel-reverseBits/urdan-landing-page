@@ -20,6 +20,26 @@ body {
   border: 2px solid red;
 }
 
+/* .prev-header {
+  transition: all 1s;
+} */
+
+.sticky-ninty-degree {
+  transition: all 1s;
+  transform: translateY(-50px);
+  opacity: 0;
+}
+
+.sticky-header {
+  transition: all 1s;
+  /* border: 2px solid red; */
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  transform: translateY(0px);
+  opacity: 1;
+}
+
 .navbar-links-fonts {
   font-family: var(--montserrat-fonts);
   font-weight: 500;
