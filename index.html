@@ -17,6 +17,7 @@
   </head>
   <body data-aos-easing="ease" data-aos-duration="1000" data-aos-delay="0">
     <!---------------------------------------- header section ------------------------------------------>
+    
     <section  id="header-section">
       <nav class="navbar navbar-expand-lg bg-body-tertiary p-0">
         <div class="py-2 py-lg-0 container px-lg-5 d-flex align-items-center">
@@ -26,7 +27,7 @@
           </a>
 
           <div
-            class=" col-2 col-sm-4 col-md-3 d-flex d-md-none justify-content-end p-0 align-items-center"
+            class="col-2 col-sm-4 col-md-3 d-flex d-md-flex d-lg-none justify-content-end p-0 align-items-center"
           >
             <span class="me-3">
               <svg
@@ -114,7 +115,7 @@
           <div class="collapse navbar-collapse row" id="navbarSupportedContent">
             <ul
             id="navbar-links-fonts"
-              class="navbar-nav col-sm-12 col-md-10 d-none d-lg-flex justify-content-xl-center justify-content-md-center p-0 navbar-links-fonts text-uppercase"
+              class="navbar-nav col-sm-12 col-md-10 d-none d-md-flex  d-lg-flex justify-content-xl-center justify-content-md-center p-0 navbar-links-fonts text-uppercase"
             >
               <li class="nav-item me-3">
                 <a class="nav-link" aria-current="page" href="#">Home</a>
@@ -144,7 +145,7 @@
 
             <!--bootstrap icons -->
             <div
-              class="col-sm-4 col-md-2 d-none d-md-flex justify-content-end p-0 align-items-center"
+              class="col-sm-4 col-md-2 d-md-flex justify-content-end p-0 align-items-center"
             >
               <span class="me-3">
                 <svg
@@ -217,7 +218,7 @@
           <!-- offCanvas  -->
           
           <div
-            class="offcanvas offcanvas-end d-md-none"
+            class="offcanvas offcanvas-end d-md-block d-lg-none"
             tabindex="-1"
             id="offcanvasRight"
             aria-labelledby="offcanvasRightLabel"
@@ -2560,7 +2561,6 @@
 
     <!------------------------------------ colloboration section ---------------------------------------->
     <!-- Colloboration Swiper  -->
-    <!--
     <section
       class="container px-lg-5"
       data-aos="fade-up"
@@ -2620,7 +2620,6 @@
         </div>
       </div>
     </section>
-    -->
     <!--------------------------------------- News Section --------------------------------------------->
     <section class="container px-lg-5 ">
       <div class="news-wrapper ">
@@ -2797,25 +2796,7 @@
       </div>
     </footer>
 
-    <button
-      id="scrollButton"
-      class="new-button"
-      onclick="window.scrollTo({top:0, behavior:'smooth'});"
-    >
-      <svg
-        id="btn-back-to-top"
-        xmlns="http://www.w3.org/2000/svg"
-        width="50"
-        height="50"
-        fill="currentColor"
-        class="bi bi-arrow-up-circle-fill"
-        viewBox="0 0 16 16"
-      >
-        <path
-          d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0m-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z"
-        />
-      </svg>
-    </button>
+    
 
     <!-- Bootstrap CDN -->
     <script
