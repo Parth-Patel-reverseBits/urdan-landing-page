@@ -19,13 +19,13 @@ html {
 body {
   font-family: var(--montserrat-fonts);
   overflow-x: hidden;
+  /* overflow-y: auto; */
 }
 
 #header-section {
   position: sticky;
   top: 0;
   z-index: 10;
-  /* border: 2px solid red; */
 }
 
 .custom-border {
